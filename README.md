@@ -40,3 +40,19 @@ Uma classe cliente nunca deve ser forçada a depender de métodos que não usa.
 
 - As interfaces devem ser reduzidas o suficiente para que classes não tenham que implementar comportamentos que não precisam.
 - Quebrar interfaces "gordas" em classes mais granulares e específicas. Os clientes devem implementar somente aqueles métodos que realmente precisam.
+
+### D - Dependency Inversion Principle
+
+Classes de alto nível não devem depender de classes de baixo nível. Ambas devem depender de abstrações. As abstrações não devem depender de detalhes. Detalhes devem depender de abstrações.
+
+- **Classes de baixo nível:** implmentaam operações básicas como trabalhar com um disco, transferindo dados pela rede, conectar-se a uma base de dados,etc.
+- **Classes de alto nível:** contém lógica de negócio complexa que direcionam classes de baixo nível
+
+O príncipio de inversão de dependência sugere trocar a direção da dependência, como aplicar:
+
+- 1. Para começar, você precisa descrever as interfaces para as operações de baixo nível que as classes de alto nível dependem, preferivelmente em termos de negócio. Por exemplo, a lógica do negócio deve chamar um método abrirRelatório(arquivo) ao invés de uma série de métodos abrirArquivo(x), lerBytes(n), fecharArquivo(x). Estas interfaces contam como de alto nível.
+
+2. Agora você pode fazer classes de alto nível dependentes daquelas interfaces, ao invés de classes concretas de baixo nível. Essa dependência será muito mais suave que a original.
+3. Uma vez que as classes de baixo nível implementam essas interfaces, elas se tornam dependentes do nível da lógica do negócio, revertendo a direção da dependência original.
+
+O princípio de inversão de dependência quase sempre anda junto com o princípio aberto/fechado: você pode estender classes de baixo nível para usar diferentes classes de lógica do negócio sem quebrar classes existentes.
