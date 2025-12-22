@@ -4,7 +4,7 @@
 
 ### S - Single Responsibility
 
-Príncipio da responsabilidade única: Uma classe deve ter apenas uma razão para mudar, ou seja, cada classe deve ser resposável por uma única responsabilidade.
+Príncipio da responsabilidade única: Uma classe deve ter apenas uma razão para mudar, ou seja, cada classe deve ser responsável por uma única responsabilidade.
 
 **Objetivo**: O principal objetivo é reduzir a complexidade, ao se ter classes com multiplos métodos e multiplas responsabilidades a medida que o código cresce, sua navegação pode se tornar lenta, pode ser difícil entender o que cada classe faz e quanto mais responsabilidades uma classe tem mais motivos para mudar ela possui, enfim, aumenta a complexidade do código.
 
@@ -33,3 +33,10 @@ Quando estendemos uma classe, deve ser possível passar uma subclasse em lugar d
 - Invariantes de uma superclasse devem ser preservadas. As invariantes são condições nas quais um objeto faz sentido. ex: um gato ter quatro patas, uma cauda e ter a habilidade de miar.
 
 - Uma subclasse não deve mudar valores de campos privados da superclasse. Algumas linguagens de programação permitem acesso a membros privados de uma classe, como (Python, Javascript).
+
+### I - Interface Segregation Principle
+
+Uma classe cliente nunca deve ser forçada a depender de métodos que não usa.
+
+- As interfaces devem ser reduzidas o suficiente para que classes não tenham que implementar comportamentos que não precisam.
+- Quebrar interfaces "gordas" em classes mais granulares e específicas. Os clientes devem implementar somente aqueles métodos que realmente precisam.
