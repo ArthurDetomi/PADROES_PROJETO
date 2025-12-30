@@ -56,3 +56,9 @@ O príncipio de inversão de dependência sugere trocar a direção da dependên
 3. Uma vez que as classes de baixo nível implementam essas interfaces, elas se tornam dependentes do nível da lógica do negócio, revertendo a direção da dependência original.
 
 O princípio de inversão de dependência quase sempre anda junto com o princípio aberto/fechado: você pode estender classes de baixo nível para usar diferentes classes de lógica do negócio sem quebrar classes existentes.
+
+---
+
+## Padrões de Projeto
+
+Utilização do livro: Use a cabeça Padrões de Projeto
