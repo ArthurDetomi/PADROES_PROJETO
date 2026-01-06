@@ -1,9 +1,9 @@
-package INTRODUCAO_1;
+package STRATEGY;
 
-import INTRODUCAO_1.behaviors.FlyRocketPowered;
-import INTRODUCAO_1.ducks.Duck;
-import INTRODUCAO_1.ducks.MallardDuck;
-import INTRODUCAO_1.ducks.ModelDuck;
+import STRATEGY.behaviors.FlyRocketPowered;
+import STRATEGY.ducks.Duck;
+import STRATEGY.ducks.MallardDuck;
+import STRATEGY.ducks.ModelDuck;
 
 public class MiniDuckSimulator {
     public static void main(String[] args) {

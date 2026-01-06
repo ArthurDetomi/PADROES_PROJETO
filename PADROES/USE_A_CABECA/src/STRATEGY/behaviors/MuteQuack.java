@@ -1,6 +1,6 @@
-package INTRODUCAO_1.behaviors;
+package STRATEGY.behaviors;
 
-import INTRODUCAO_1.interfaces.QuackBehavior;
+import STRATEGY.interfaces.QuackBehavior;
 
 public class MuteQuack implements QuackBehavior{
     @Override

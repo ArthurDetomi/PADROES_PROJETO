@@ -1,6 +1,6 @@
-package INTRODUCAO_1.behaviors;
+package STRATEGY.behaviors;
 
-import INTRODUCAO_1.interfaces.FlyBehavior;
+import STRATEGY.interfaces.FlyBehavior;
 
 public class FlyRocketPowered implements FlyBehavior {
     @Override

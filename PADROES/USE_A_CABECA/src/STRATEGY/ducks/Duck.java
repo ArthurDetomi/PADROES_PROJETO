@@ -1,7 +1,7 @@
-package INTRODUCAO_1.ducks;
+package STRATEGY.ducks;
 
-import INTRODUCAO_1.interfaces.FlyBehavior;
-import INTRODUCAO_1.interfaces.QuackBehavior;
+import STRATEGY.interfaces.FlyBehavior;
+import STRATEGY.interfaces.QuackBehavior;
 
 public abstract class Duck {
     FlyBehavior flyBehavior;

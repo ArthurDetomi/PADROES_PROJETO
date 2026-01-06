@@ -1,4 +1,4 @@
-package INTRODUCAO_1.interfaces;
+package STRATEGY.interfaces;
 
 public interface QuackBehavior {
     public void quack();

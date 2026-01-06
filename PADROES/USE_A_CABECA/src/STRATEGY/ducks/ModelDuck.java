@@ -1,7 +1,7 @@
-package INTRODUCAO_1.ducks;
+package STRATEGY.ducks;
 
-import INTRODUCAO_1.behaviors.FlyNoWay;
-import INTRODUCAO_1.behaviors.Quack;
+import STRATEGY.behaviors.FlyNoWay;
+import STRATEGY.behaviors.Quack;
 
 public class ModelDuck extends Duck {
     public ModelDuck() {

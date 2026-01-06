@@ -61,4 +61,13 @@ O princípio de inversão de dependência quase sempre anda junto com o princíp
 
 ## Padrões de Projeto
 
-Utilização do livro: Use a cabeça Padrões de Projeto
+Utilização do livro: Use a cabeça Padrões de Projeto.
+
+### Strategy
+
+O padrão Strategy define uma família de algoritmos, encapsula cada um deles e os torna intercambiaveis. A estrategia deixa o algoritmo variar independentemente dos clientes que o utilizam.
+
+**Princípios de projeto**
+1. Indentifique os aspectos de seu aplicativo que variam e separe-os que permanece igual
+2. Programe para uma interface não para uma implementação
+3. Dar prioridade a composição

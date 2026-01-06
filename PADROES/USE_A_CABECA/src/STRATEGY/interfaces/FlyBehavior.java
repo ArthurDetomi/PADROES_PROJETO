@@ -1,4 +1,4 @@
-package INTRODUCAO_1.interfaces;
+package STRATEGY.interfaces;
 
 public interface FlyBehavior {
     public void fly();
