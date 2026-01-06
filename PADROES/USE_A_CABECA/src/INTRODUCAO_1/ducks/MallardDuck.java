@@ -1,11 +1,13 @@
-package PADROES.INTRODUCAO_1;
+package INTRODUCAO_1.ducks;
+
+import INTRODUCAO_1.behaviors.FlyWithWings;
+import INTRODUCAO_1.behaviors.Quack;
 
 public class MallardDuck extends Duck {
     public MallardDuck() {
-        quackBeHavior = new Quack();
+        quackBehavior = new Quack();
         flyBehavior = new FlyWithWings();
     }
-
 
     @Override
     public void display() {

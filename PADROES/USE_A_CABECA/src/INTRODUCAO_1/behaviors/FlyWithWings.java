@@ -1,4 +1,6 @@
-package PADROES.INTRODUCAO_1;
+package INTRODUCAO_1.behaviors;
+
+import INTRODUCAO_1.interfaces.FlyBehavior;
 
 public class FlyWithWings implements FlyBehavior {
     @Override
@@ -6,3 +8,4 @@ public class FlyWithWings implements FlyBehavior {
         System.out.println("I'm flying with wings");
     }
 }
+
