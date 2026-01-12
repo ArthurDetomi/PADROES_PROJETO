@@ -71,7 +71,7 @@ O padrão Strategy define uma família de algoritmos, encapsula cada um deles e 
 
 1. Indentifique os aspectos de seu aplicativo que variam e separe-os que permanece igual
 2. Programe para uma interface não para uma implementação
-3. Dar prioridade a composição
+3. Dar prioridade a composição ao invés de herança
 
 ### Observer
 
@@ -79,7 +79,7 @@ O **Padrão Observer** define a dependência um-para-muitos entre objetos para q
 
 **Editora(Subject) + Assinantes (Observer) = Padrão Observer**
 
-O subject implementa uma interface Subject que possui metodos como registrar, remover e notificar observadores, e os observadores implementam uma interface Observer com o metodo update, o Subject tera uma lista de observadores o qual serão noticicados quando seu estado de interesse dos observadores for modificado.
+O subject implementa uma interface Subject que possui métodos como registrar, remover e notificar observadores, e os observadores implementam uma interface Observer com o método update, o Subject terá uma lista de observadores o qual serão noticiados quando seu estado de interesse dos observadores for modificado.
 
 Adiciona uma ligação leve entre os objetos pois os observadores só sabem que o objeto concreto implementa a interface Subject e o Subject sabe que seus observadores implementam a interface Observer.
 
