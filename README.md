@@ -68,6 +68,23 @@ Utilização do livro: Use a cabeça Padrões de Projeto.
 O padrão Strategy define uma família de algoritmos, encapsula cada um deles e os torna intercambiaveis. A estrategia deixa o algoritmo variar independentemente dos clientes que o utilizam.
 
 **Princípios de projeto**
+
 1. Indentifique os aspectos de seu aplicativo que variam e separe-os que permanece igual
 2. Programe para uma interface não para uma implementação
 3. Dar prioridade a composição
+
+### Observer
+
+O **Padrão Observer** define a dependência um-para-muitos entre objetos para que quando um objeto mude de estado todos os seus dependentes sejam avisados e atualizados automaticamente.
+
+**Editora(Subject) + Assinantes (Observer) = Padrão Observer**
+
+O subject implementa uma interface Subject que possui metodos como registrar, remover e notificar observadores, e os observadores implementam uma interface Observer com o metodo update, o Subject tera uma lista de observadores o qual serão noticicados quando seu estado de interesse dos observadores for modificado.
+
+Adiciona uma ligação leve entre os objetos pois os observadores só sabem que o objeto concreto implementa a interface Subject e o Subject sabe que seus observadores implementam a interface Observer.
+
+Os observadores podem ser adicionados e removidos em tempo de execução.
+
+**Princípios de projeto**
+
+- Busque designs levemente ligados entre objetos que interagem. Projetos levemente ligados permitem contruir sistemas OO flexíveis que podem lidar com mudanças que minimizam a interdepêndencia entre os objetos.
