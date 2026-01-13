@@ -1,3 +1,6 @@
 *.class
 out
 bin
+.idea
+*.iml
+.gitignore

@@ -88,3 +88,25 @@ Os observadores podem ser adicionados e removidos em tempo de execução.
 **Princípios de projeto**
 
 - Busque designs levemente ligados entre objetos que interagem. Projetos levemente ligados permitem contruir sistemas OO flexíveis que podem lidar com mudanças que minimizam a interdepêndencia entre os objetos.
+
+#### Como o padrão Observer lida com os princípios de design
+
+---
+
+**Princípio:** Identifique os aspectos de seu aplicativo que variam e separe-os do que continua igual:
+
+O que varia no padrão Observer é o estado do sujeito e o número e os tipos de observadores. Com esse padrão, pode-se variar os objetos que dependem do estado do sujeito sem ter que alterar esse sujeito.
+
+---
+
+**Princípio:** Programe para uma interface, e não para uma implementação
+
+Sujeito e observador usam interfaces. O sujeito monitora os objetos que implementam a interface Observer, enquanto os observadores registram e são notificados pela interface Subject. O que mantém as coisas bem e levemente ligadas.
+
+---
+
+**Princípio:** Dê prioridade à composição em relação à herança
+
+O padrão Observer utiliza composição para compor qualquer número de observador com seus sujeitos. Essas relações não são configuradas por algum tipo de hierarquia de herança. São configuradas no tempo de execução pela composição.
+
+---
