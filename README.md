@@ -110,3 +110,23 @@ Sujeito e observador usam interfaces. O sujeito monitora os objetos que implemen
 O padrão Observer utiliza composição para compor qualquer número de observador com seus sujeitos. Essas relações não são configuradas por algum tipo de hierarquia de herança. São configuradas no tempo de execução pela composição.
 
 ---
+
+### Decorator
+
+O padrão **Decorator** anexa responsabilidades adicionais a um objeto dinamicamente. Os decoradores fornecem uma alternativa flexível de subclasse para estender a funcionalidade.
+
+---
+
+**Princípio:** As classes devem estar abertas para a extensão, mas fechadas para modificação.
+
+---
+
+**Pontos chaves:**
+
+- Em nossos projetos deveríamos permitir que o comportamento fosse estendido sem a necessidade de modificar o código existente.
+- Composição e delegação podem ser sempre usadas para adicionar novos comportamentos no tempo de execução.
+- O padrão Decorator envolve um conjunto de classes de decorador uasdas para englobar componentes concretos.
+- As classes de decorador espelham o tipo que os componentes decoram. (Na verdade, elas são do mesmo tipo que os componentes que decoram, seja por herança ou por implementação de interface).
+- Os decoradores mudam o comportamento de seus componentes adicionando novos recursos antes e/ou depois (ou mesmo no lugar) de chamadas de método para o componente.
+- Pode-se englobar um componente com qualquer número de decoradores.
+- Os decoradores podem resultar em muitos objetos pequenos em nosso design e o uso exagerado pode ser complexo.
