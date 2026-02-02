@@ -1,4 +1,4 @@
-# Mergulho nos padrões de projeto
+# Livros: Mergulho nos padrões de projeto e Use a Cabeça: Padrões de Projeto
 
 ## Solid
 
