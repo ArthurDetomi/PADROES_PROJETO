@@ -130,3 +130,47 @@ O padrão **Decorator** anexa responsabilidades adicionais a um objeto dinamicam
 - Os decoradores mudam o comportamento de seus componentes adicionando novos recursos antes e/ou depois (ou mesmo no lugar) de chamadas de método para o componente.
 - Pode-se englobar um componente com qualquer número de decoradores.
 - Os decoradores podem resultar em muitos objetos pequenos em nosso design e o uso exagerado pode ser complexo.
+
+---
+
+### Factory
+
+Todos os padrões factory encapsula a criação de objetos.
+
+#### Factory Method
+
+O Padrão Factory Method encapsula a criação de objetos deixando as subclasses decidirem quais objetos criar. **(Usa herança)**
+
+**Definição: o Padrão Factory Method** define uma interface para criar um objeto, mas permite ás classes decidir qual classe instanciar. O Factory Method permite a uma classe deferir a instanciação para subclasses.
+
+**Princípio:** Dependa de abstrações. Não dependa de classes concretas.
+
+**Princípio: Inversão de dependência** sugere que componentes de baixo nível não dependam de componentes de níbel inferior, os dois devem depender de abstrações.
+
+**Evitar violar inversão de dependências:**
+- Nenhuma váriavel deve conter uma referência a uma classe concreta.
+- Nenhuma classe deve derivar de uma classe concreta.
+- Nenhum método deve substituir um método implementado de uma de suas classes base
+
+
+**Quando usar:** Para desvincular código cliente das classes concretas em que você precisa criar uma instância ou se você não conhece com antecedência todas as classes concretas que serão necessárias. Para usar basta criar uma subclasse e implementar o método factory.
+
+#### Abstract Factory **(Usa interface e composição)**
+
+**Definição: o Padrão Abstract Factory** fornece uma interface para criar famílias de objetos relacionados ou dependentes sem especificar suas classes concretas.
+
+Permite que um cliente use uma interface abstrata para criar um conjunto de produtos relacionados sem saber (ou se importar) sobre os produtos concretos que são realmente produzidos. Dessa forma, o cliente é desvinculado de qualquer especificação dos produtos concretos.
+
+**Quando usar:** Quando tiver que tiver famílias de produtos que precisa criar e quiser ter certeza de que os clientes criam produtos pertencentes um ao outro. Para usar deve-se definir a interface e utilizar composição.
+
+#### Pontos importantes
+
+- Todas as fábricas encapsulam a criação de objetos.
+- Simple Factory, embora não seja um padrão de projetos legítimo é uma maneira simples de desvincular seus clientes das classes concretas.
+- Factory Method utiliza a herança: a criação de objetos é delegada a subclasses que implementam o método fábrica para criar objetos.
+- Abstract Factory utiliza composição de objetos: a criação de objetos é implementada em métodos expostos na interface de fábrica.
+- Todos os padrões factory promovem ligações fracas reduzindo a dependência de seu aplicativo em classes concretas.
+- O objetivo da Abstract Factory é criar famílias de objetos relacionados sem ter que depender de suas classes concretas
+- Factories são uma técnica eficaz para codificar para abstrações, e não classes concretas.
+
+
