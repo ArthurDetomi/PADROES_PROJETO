@@ -178,7 +178,7 @@ Permite que um cliente use uma interface abstrata para criar um conjunto de prod
 
 **Def:** O Padrão Singleton garante que uma classe tenha apenas uma instância e fornece um ponto global de acesso a ela.
 
-"Quando precisar ter certeza de que há somente uma instância de uma classe em seu aplicativo Singleton."
+"Quando precisar ter certeza de que há somente uma instância de uma classe em seu aplicativo use Singleton."
 
 
 #### Pontos importantes
