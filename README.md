@@ -172,5 +172,23 @@ Permite que um cliente use uma interface abstrata para criar um conjunto de prod
 - Todos os padrões factory promovem ligações fracas reduzindo a dependência de seu aplicativo em classes concretas.
 - O objetivo da Abstract Factory é criar famílias de objetos relacionados sem ter que depender de suas classes concretas
 - Factories são uma técnica eficaz para codificar para abstrações, e não classes concretas.
+--- 
+
+### Singleton
+
+**Def:** O Padrão Singleton garante que uma classe tenha apenas uma instância e fornece um ponto global de acesso a ela.
+
+"Quando precisar ter certeza de que há somente uma instância de uma classe em seu aplicativo Singleton."
 
 
+#### Pontos importantes
+- O Padrão Singleton garante que tenha no máximo uma instancia de uma classe em seu aplicativo.
+- O Padrão Singleton fornece um ponto de acesso global a essa instância.
+- A implementação de Java do Padrão Singleton utiliza um construtor private, um método estático combinado com uma variável estática.
+- Examine suas restrições de desempenho e recursos e escolha cuidadosamente uma implementação de Singleton apropriada para aplicativos de vários segmentos (e deve-se considerar todos os aplicativos com vários segmentos).
+- Deve-se ter cuidado quando se estiver usando vários carregadores de classe; isso poderia atrapalhar a implementação de Singleton e resultar em várias intâncias
+- Em versões anteriores a JVM 1.2 deve-se criar um registro de Singletons para combater o coletor de lixo.
+
+
+
+---
